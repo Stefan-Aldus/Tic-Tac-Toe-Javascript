@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.656) 0%, rgb(34, 34, 34) 100%), center, url(../../generic-media/backgrounds/aboutme.jpg);
+}
+
+.playarea * {
+    font-size: 2rem;
+}
+
+.playarea {
+    width: 75vw;
+    height: 75vh;
+    outline: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.select {
+    width: 25vw;
+    height: 25vh;
+    outline: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.player1:hover{
+    background-color: darkslateblue;
+}
+
+.player2:hover{
+    background-color: darkslategray;
+}
+
+.x::after {
+    content: "\2716";
+}
+
+.y::after {
+    content: "\2713";
+}
+
+.x:hover, .y:hover {
+   cursor: default; 
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="../../generic-recources/styles/style.css" />
+    <link rel="stylesheet" href="gamestyle.css" />
+    <!-- Linking font, for all valid weights italic is valid, and valid weights are: 100, 300, 400, 500, 700, 900 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Adding a favicon/logo -->
+    <link rel="icon" href="../../generic-media/generic-images/favicom.png" />
+    <title>My Personal Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Header and nav elements -->
+    <div id="hamburger" class="hamburger">
+      <img
+        src="../../generic-media/generic-images/hamburger.png"
+        id="hamburger1"
+        alt="Hamburger menu icon"
+        width="25px"
+        height="25px"
+      />
+    </div>
+    <header class="mainheader" id="hamburgermenuheader">
+      <h1 class="underline text-gradient">Personal Portfolio</h1>
+      <nav>
+        <ul>
+          <a href=".../../index.html" class="linkunderline">Homepage</a>
+          <li class="dropdown">
+            <p class="dropbtn" id="dropbtn">Portfolio Page</p>
+            <div class="dropdown-content" id="dropdown-content">
+              <a
+                href="../../portfolio-page-files/portfolio.html#aboutme"
+                class="linkunderline"
+                >About me</a
+              >
+              <a
+                href="../../portfolio-page-files/portfolio.html#projects"
+                class="linkunderline"
+                >Projects</a
+              >
+              <a
+                href="../../portfolio-page-files/portfolio.html#knowledge"
+                class="linkunderline"
+                >Knowledge</a
+              >
+              <a
+                href="../../portfolio-page-files/portfolio.html#contact"
+                class="linkunderline"
+                >Contact</a
+              >
+            </div>
+          </li>
+          <li class="dropdown">
+            <p class="dropbtn" id="dropbtn2">Javascript Projects</p>
+            <div class="dropdown-content" id="dropdown-content2">
+              <a href="" class="linkunderline">Tic-Tac-Toe</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="underline">TIC TAC TOE</h2>
+      <p id="player" class="player">
+        The current player is: Player X (Player one!)
+      </p>
+      <div class="playarea" id="playarea">
+        <div class="row1">
+          <div class="pos1 select griditem" id="pos1-1"></div>
+          <div class="pos2 select griditem" id="pos2-1"></div>
+          <div class="pos3 select griditem" id="pos3-1"></div>
+        </div>
+        <div class="row2">
+          <div class="pos1 select griditem" id="pos1-2"></div>
+          <div class="pos2 select griditem" id="pos2-2"></div>
+          <div class="pos3 select griditem" id="pos3-2"></div>
+        </div>
+        <div class="row3">
+          <div class="pos1 select griditem" id="pos1-3"></div>
+          <div class="pos2 select griditem" id="pos2-3"></div>
+          <div class="pos3 select griditem" id="pos3-3"></div>
+        </div>
+      </div>
+    </main>
+    <footer id="hamburgermenufooter">Copyright Stefan Aldus 2023</footer>
+    <!-- Linking the script -->
+    <script src="./game.js"></script>
+    <script src="../../generic-recources/scripts/app.js"></script>
+  </body>
+</html>
